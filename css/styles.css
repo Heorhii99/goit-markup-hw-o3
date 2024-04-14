@@ -5,7 +5,7 @@ body {
   --second-family: "Raleway", sans-serif;
   background: #fff;
   color: #434455;}
-ul {
+ul { padding: 0;
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;}
@@ -30,21 +30,14 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  align-content: center;
-  height: 72;
   justify-content: space-between;
-  flex-shrink: 0;}
+  }
 
 .header {
   border-bottom: 1px solid #e7e9fc;
   color: #434455;}
 
 .logo {
-  display: flex;
-  align-items: flex-start;
-  gap: 0;
-  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -65,13 +58,12 @@ img {
   color: #2e2f42;
   text-decoration: none;
   padding: 24px 0;
-  padding: 24px 0;}
-.header-nav-list {
+  padding: 24px 0;
+display: block;}
+
+  .header-nav-list {
   display: flex;
   align-items: center;
-  gap: 40px;
-  flex-grow: 3;
-  padding: 24px 0;
 }
 .header-list {
   display: flex;
@@ -93,21 +85,17 @@ img {
 .address-list {
   display: flex;
   align-items: flex-end;
-  gap: 40px;
-  padding-left: 15px;
-}
-.address-item-link {
+  gap: 40px;}
+
+  .address-item-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-decoration: unset;
-  display: flex;
-  align-items: center;
-  gap: 0;
-}
-.address-item-link:hover {
+  text-decoration: unset;}
+
+  .address-item-link:hover {
   color: #404bbf;
 }
 .address-item-link:focus {
@@ -116,14 +104,11 @@ img {
 /*BANNER*/
 .banner {
   background: #2e2f42;
-  margin-top: 0;
-  margin-bottom: 120px;
-  height: 600px;
   padding: 188px 0;
 }
 
 .banner-title {
-  padding: 188px 0;
+  margin-bottom: 48px; ;
   text-align: center;
   font-weight: 700;
   font-size: 56px;
@@ -159,9 +144,6 @@ img {
 }
 /*TASKS*/
 .tasks {
-  background-color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 120px;
   padding: 120px 0;
 }
 .visually-hidden {
@@ -205,7 +187,6 @@ img {
   padding: 120px 0;
 }
 .team-list {
-  flex-basis: calc((100% - 3 * 24px));
   display: flex;
   gap: 24px;
 }
@@ -218,8 +199,6 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-top: 0;
-  padding-bottom: 72px;
   margin-bottom: 72px;
 }
 .card-team {
@@ -229,6 +208,7 @@ img {
 .team-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 3 * 24px));
 }
 .team-subtitle {
   font-weight: 500;
@@ -267,7 +247,7 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
+  
 }
 .portfolio-header {
   text-align: center;
@@ -302,9 +282,10 @@ img {
   padding: 100px 0;
 }
 footer .logo {
-  padding-bottom: 16px;
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 0;
+  padding: 0;
 }
 .footer-logo {
   padding-bottom: 16px;
@@ -315,9 +296,8 @@ footer .logo {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;}
 
-  max-width: 264px;
-}
-.logo-studio-footer {
+  .logo-studio-footer {
   color: #f4f4fd;
 }  
